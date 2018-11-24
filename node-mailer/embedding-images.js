@@ -16,8 +16,8 @@ const fs = require('fs');
 
     // aka. Message Object:
     let mailOptions = {
-        from: `User Name <${process.env.G_user}>`, 
-        to: 'divyanshbatham@protonmail.com', 
+        from: process.env.G_user, 
+        to: process.env.P_user, 
         subject: 'Email with Embedded Image', 
         text: 'Image', 
         html: 'Embedded image 1: <br/> <img src="cid:testImage@nodemailer.com"/> <br/> Embedded image 2: <br/> <img src="cid:testImage2@nodemailer.com"/>',

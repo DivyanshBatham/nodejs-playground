@@ -16,8 +16,8 @@ const fs = require('fs');
 
     // aka. Message Object:
     let mailOptions = {
-        from: `User Name <${process.env.G_user}>`, 
-        to: 'divyanshbatham@protonmail.com', 
+        from: process.env.G_user, 
+        to: process.env.P_user, 
         subject: 'Email with attachment', 
         text: 'Find the attachments below.', 
         html: 'Find the attachments below.',

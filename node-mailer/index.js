@@ -15,7 +15,7 @@ const nodemailer = require('nodemailer');
 
     let mailOptions = {
         from: `User Name <${process.env.G_user}>`, 
-        to: 'divyanshbatham@protonmail.com', 
+        to: `${process.env.P_user}, ${process.env.G_user}`, 
         subject: 'Subject of Email', 
         text: 'Hello world?', 
         html: '<b>Hello world?</b> <ul><li>Item</li></ul>' 
